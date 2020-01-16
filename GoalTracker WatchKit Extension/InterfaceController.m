@@ -52,9 +52,11 @@
 	[self addMenuItemWithItemIcon:icon title:title action:sel];
 
 	CGFloat alpha = (activated) ? 1.0 : 0.4;
-	[_yellowGroup setAlpha:alpha];
-	[_purpleGroup setAlpha:alpha];
-	[_resetGroup setAlpha:alpha];
+	[self animateWithDuration:0.12 animations:^{
+		[self->_yellowGroup setAlpha:alpha];
+		[self->_purpleGroup setAlpha:alpha];
+		[self->_resetGroup setAlpha:alpha];
+	}];
 }
 
 - (void)willActivate {
