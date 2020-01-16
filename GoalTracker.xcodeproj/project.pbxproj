@@ -77,6 +77,7 @@
 		EF24B5F323C7C9B7001EBDB9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EF39EDF923D10BBF00CF9780 /* RunningSession.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RunningSession.h; sourceTree = "<group>"; };
 		EF39EDFA23D10BBF00CF9780 /* RunningSession.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RunningSession.m; sourceTree = "<group>"; };
+		EF39EDFD23D1187700CF9780 /* Config.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Config.xcconfig; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,6 +96,7 @@
 			children = (
 				EF24B5D823C7C9B5001EBDB9 /* GoalTracker WatchKit App */,
 				EF24B5E723C7C9B6001EBDB9 /* GoalTracker WatchKit Extension */,
+				EF39EDFC23D1186100CF9780 /* Shared */,
 				EF24B5D123C7C9B4001EBDB9 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -134,6 +136,14 @@
 				EF24B5F323C7C9B7001EBDB9 /* Info.plist */,
 			);
 			path = "GoalTracker WatchKit Extension";
+			sourceTree = "<group>";
+		};
+		EF39EDFC23D1186100CF9780 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				EF39EDFD23D1187700CF9780 /* Config.xcconfig */,
+			);
+			path = Shared;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -298,12 +308,11 @@
 /* Begin XCBuildConfiguration section */
 		EF24B5F423C7C9B7001EBDB9 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EF39EDFD23D1187700CF9780 /* Config.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
-				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CLANG_ENABLE_OBJC_WEAK = YES;
@@ -332,7 +341,6 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
@@ -355,12 +363,11 @@
 		};
 		EF24B5F523C7C9B7001EBDB9 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EF39EDFD23D1187700CF9780 /* Config.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
-				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CLANG_ENABLE_OBJC_WEAK = YES;
@@ -389,8 +396,8 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = "NDEBUG=1";
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
@@ -484,9 +491,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = "$(GOALTRACKER_BUILD)";
 				DEVELOPMENT_TEAM = BQ7YQ94D2F;
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = "$(GOALTRACKER_VERSION)";
 				PRODUCT_BUNDLE_IDENTIFIER = net.misacek.GoalTracker;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -496,9 +503,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = "$(GOALTRACKER_BUILD)";
 				DEVELOPMENT_TEAM = BQ7YQ94D2F;
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = "$(GOALTRACKER_VERSION)";
 				PRODUCT_BUNDLE_IDENTIFIER = net.misacek.GoalTracker;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};

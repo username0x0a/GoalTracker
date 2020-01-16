@@ -1,0 +1,13 @@
+//
+//  Config.xcconfig
+//  GoalTracker
+//
+//  Created by Michi on 16/01/2020.
+//  Copyright © 2020 Michi. All rights reserved.
+//
+
+// Configuration settings file format documentation can be found at:
+// https://help.apple.com/xcode/#/dev745c5c974
+
+GOALTRACKER_VERSION = 0.1
+GOALTRACKER_BUILD   = 14
