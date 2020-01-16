@@ -1,0 +1,549 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		EF24B5D523C7C9B5001EBDB9 /* GoalTracker WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = EF24B5D423C7C9B5001EBDB9 /* GoalTracker WatchKit App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		EF24B5DB23C7C9B5001EBDB9 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF24B5D923C7C9B5001EBDB9 /* Interface.storyboard */; };
+		EF24B5DD23C7C9B6001EBDB9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EF24B5DC23C7C9B6001EBDB9 /* Assets.xcassets */; };
+		EF24B5E423C7C9B6001EBDB9 /* GoalTracker WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = EF24B5E323C7C9B6001EBDB9 /* GoalTracker WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		EF24B5EA23C7C9B6001EBDB9 /* InterfaceController.m in Sources */ = {isa = PBXBuildFile; fileRef = EF24B5E923C7C9B6001EBDB9 /* InterfaceController.m */; };
+		EF24B5ED23C7C9B6001EBDB9 /* ExtensionDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EF24B5EC23C7C9B6001EBDB9 /* ExtensionDelegate.m */; };
+		EF24B5F023C7C9B6001EBDB9 /* ComplicationController.m in Sources */ = {isa = PBXBuildFile; fileRef = EF24B5EF23C7C9B6001EBDB9 /* ComplicationController.m */; };
+		EF24B5F223C7C9B7001EBDB9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EF24B5F123C7C9B7001EBDB9 /* Assets.xcassets */; };
+		EF39EDFB23D10BBF00CF9780 /* RunningSession.m in Sources */ = {isa = PBXBuildFile; fileRef = EF39EDFA23D10BBF00CF9780 /* RunningSession.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		EF24B5D623C7C9B5001EBDB9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EF24B5CA23C7C9B4001EBDB9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EF24B5D323C7C9B5001EBDB9;
+			remoteInfo = "GoalTracker WatchKit App";
+		};
+		EF24B5E523C7C9B6001EBDB9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EF24B5CA23C7C9B4001EBDB9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EF24B5E223C7C9B6001EBDB9;
+			remoteInfo = "GoalTracker WatchKit Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		EF24B5F923C7C9B7001EBDB9 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				EF24B5E423C7C9B6001EBDB9 /* GoalTracker WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EF24B5FD23C7C9B7001EBDB9 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				EF24B5D523C7C9B5001EBDB9 /* GoalTracker WatchKit App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		EF24B5D023C7C9B4001EBDB9 /* GoalTracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GoalTracker.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EF24B5D423C7C9B5001EBDB9 /* GoalTracker WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "GoalTracker WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EF24B5DA23C7C9B5001EBDB9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		EF24B5DC23C7C9B6001EBDB9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EF24B5DE23C7C9B6001EBDB9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EF24B5E323C7C9B6001EBDB9 /* GoalTracker WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "GoalTracker WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EF24B5E823C7C9B6001EBDB9 /* InterfaceController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InterfaceController.h; sourceTree = "<group>"; };
+		EF24B5E923C7C9B6001EBDB9 /* InterfaceController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = InterfaceController.m; sourceTree = "<group>"; };
+		EF24B5EB23C7C9B6001EBDB9 /* ExtensionDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ExtensionDelegate.h; sourceTree = "<group>"; };
+		EF24B5EC23C7C9B6001EBDB9 /* ExtensionDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ExtensionDelegate.m; sourceTree = "<group>"; };
+		EF24B5EE23C7C9B6001EBDB9 /* ComplicationController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ComplicationController.h; sourceTree = "<group>"; };
+		EF24B5EF23C7C9B6001EBDB9 /* ComplicationController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ComplicationController.m; sourceTree = "<group>"; };
+		EF24B5F123C7C9B7001EBDB9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EF24B5F323C7C9B7001EBDB9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EF39EDF923D10BBF00CF9780 /* RunningSession.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RunningSession.h; sourceTree = "<group>"; };
+		EF39EDFA23D10BBF00CF9780 /* RunningSession.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RunningSession.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EF24B5E023C7C9B6001EBDB9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		EF24B5C923C7C9B4001EBDB9 = {
+			isa = PBXGroup;
+			children = (
+				EF24B5D823C7C9B5001EBDB9 /* GoalTracker WatchKit App */,
+				EF24B5E723C7C9B6001EBDB9 /* GoalTracker WatchKit Extension */,
+				EF24B5D123C7C9B4001EBDB9 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		EF24B5D123C7C9B4001EBDB9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EF24B5D023C7C9B4001EBDB9 /* GoalTracker.app */,
+				EF24B5D423C7C9B5001EBDB9 /* GoalTracker WatchKit App.app */,
+				EF24B5E323C7C9B6001EBDB9 /* GoalTracker WatchKit Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EF24B5D823C7C9B5001EBDB9 /* GoalTracker WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				EF24B5D923C7C9B5001EBDB9 /* Interface.storyboard */,
+				EF24B5DC23C7C9B6001EBDB9 /* Assets.xcassets */,
+				EF24B5DE23C7C9B6001EBDB9 /* Info.plist */,
+			);
+			path = "GoalTracker WatchKit App";
+			sourceTree = "<group>";
+		};
+		EF24B5E723C7C9B6001EBDB9 /* GoalTracker WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				EF24B5E823C7C9B6001EBDB9 /* InterfaceController.h */,
+				EF24B5E923C7C9B6001EBDB9 /* InterfaceController.m */,
+				EF24B5EB23C7C9B6001EBDB9 /* ExtensionDelegate.h */,
+				EF24B5EC23C7C9B6001EBDB9 /* ExtensionDelegate.m */,
+				EF24B5EE23C7C9B6001EBDB9 /* ComplicationController.h */,
+				EF24B5EF23C7C9B6001EBDB9 /* ComplicationController.m */,
+				EF39EDF923D10BBF00CF9780 /* RunningSession.h */,
+				EF39EDFA23D10BBF00CF9780 /* RunningSession.m */,
+				EF24B5F123C7C9B7001EBDB9 /* Assets.xcassets */,
+				EF24B5F323C7C9B7001EBDB9 /* Info.plist */,
+			);
+			path = "GoalTracker WatchKit Extension";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EF24B5CF23C7C9B4001EBDB9 /* GoalTracker */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EF24B5FE23C7C9B7001EBDB9 /* Build configuration list for PBXNativeTarget "GoalTracker" */;
+			buildPhases = (
+				EF24B5CE23C7C9B4001EBDB9 /* Resources */,
+				EF24B5FD23C7C9B7001EBDB9 /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EF24B5D723C7C9B5001EBDB9 /* PBXTargetDependency */,
+			);
+			name = GoalTracker;
+			productName = GoalTracker;
+			productReference = EF24B5D023C7C9B4001EBDB9 /* GoalTracker.app */;
+			productType = "com.apple.product-type.application.watchapp2-container";
+		};
+		EF24B5D323C7C9B5001EBDB9 /* GoalTracker WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EF24B5FA23C7C9B7001EBDB9 /* Build configuration list for PBXNativeTarget "GoalTracker WatchKit App" */;
+			buildPhases = (
+				EF24B5D223C7C9B5001EBDB9 /* Resources */,
+				EF24B5F923C7C9B7001EBDB9 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EF24B5E623C7C9B6001EBDB9 /* PBXTargetDependency */,
+			);
+			name = "GoalTracker WatchKit App";
+			productName = "GoalTracker WatchKit App";
+			productReference = EF24B5D423C7C9B5001EBDB9 /* GoalTracker WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		EF24B5E223C7C9B6001EBDB9 /* GoalTracker WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EF24B5F623C7C9B7001EBDB9 /* Build configuration list for PBXNativeTarget "GoalTracker WatchKit Extension" */;
+			buildPhases = (
+				EF24B5DF23C7C9B6001EBDB9 /* Sources */,
+				EF24B5E023C7C9B6001EBDB9 /* Frameworks */,
+				EF24B5E123C7C9B6001EBDB9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "GoalTracker WatchKit Extension";
+			productName = "GoalTracker WatchKit Extension";
+			productReference = EF24B5E323C7C9B6001EBDB9 /* GoalTracker WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EF24B5CA23C7C9B4001EBDB9 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1130;
+				ORGANIZATIONNAME = Michi;
+				TargetAttributes = {
+					EF24B5CF23C7C9B4001EBDB9 = {
+						CreatedOnToolsVersion = 11.3;
+					};
+					EF24B5D323C7C9B5001EBDB9 = {
+						CreatedOnToolsVersion = 11.3;
+					};
+					EF24B5E223C7C9B6001EBDB9 = {
+						CreatedOnToolsVersion = 11.3;
+					};
+				};
+			};
+			buildConfigurationList = EF24B5CD23C7C9B4001EBDB9 /* Build configuration list for PBXProject "GoalTracker" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = EF24B5C923C7C9B4001EBDB9;
+			productRefGroup = EF24B5D123C7C9B4001EBDB9 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EF24B5CF23C7C9B4001EBDB9 /* GoalTracker */,
+				EF24B5D323C7C9B5001EBDB9 /* GoalTracker WatchKit App */,
+				EF24B5E223C7C9B6001EBDB9 /* GoalTracker WatchKit Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EF24B5CE23C7C9B4001EBDB9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EF24B5D223C7C9B5001EBDB9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EF24B5DD23C7C9B6001EBDB9 /* Assets.xcassets in Resources */,
+				EF24B5DB23C7C9B5001EBDB9 /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EF24B5E123C7C9B6001EBDB9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EF24B5F223C7C9B7001EBDB9 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EF24B5DF23C7C9B6001EBDB9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EF39EDFB23D10BBF00CF9780 /* RunningSession.m in Sources */,
+				EF24B5F023C7C9B6001EBDB9 /* ComplicationController.m in Sources */,
+				EF24B5ED23C7C9B6001EBDB9 /* ExtensionDelegate.m in Sources */,
+				EF24B5EA23C7C9B6001EBDB9 /* InterfaceController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		EF24B5D723C7C9B5001EBDB9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EF24B5D323C7C9B5001EBDB9 /* GoalTracker WatchKit App */;
+			targetProxy = EF24B5D623C7C9B5001EBDB9 /* PBXContainerItemProxy */;
+		};
+		EF24B5E623C7C9B6001EBDB9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EF24B5E223C7C9B6001EBDB9 /* GoalTracker WatchKit Extension */;
+			targetProxy = EF24B5E523C7C9B6001EBDB9 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		EF24B5D923C7C9B5001EBDB9 /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EF24B5DA23C7C9B5001EBDB9 /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		EF24B5F423C7C9B7001EBDB9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		EF24B5F523C7C9B7001EBDB9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EF24B5F723C7C9B7001EBDB9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = BQ7YQ94D2F;
+				INFOPLIST_FILE = "GoalTracker WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = net.misacek.GoalTracker.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 6.1;
+			};
+			name = Debug;
+		};
+		EF24B5F823C7C9B7001EBDB9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = BQ7YQ94D2F;
+				INFOPLIST_FILE = "GoalTracker WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = net.misacek.GoalTracker.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 6.1;
+			};
+			name = Release;
+		};
+		EF24B5FB23C7C9B7001EBDB9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = BQ7YQ94D2F;
+				IBSC_MODULE = GoalTracker_WatchKit_Extension;
+				INFOPLIST_FILE = "GoalTracker WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = net.misacek.GoalTracker.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 6.1;
+			};
+			name = Debug;
+		};
+		EF24B5FC23C7C9B7001EBDB9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = BQ7YQ94D2F;
+				IBSC_MODULE = GoalTracker_WatchKit_Extension;
+				INFOPLIST_FILE = "GoalTracker WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = net.misacek.GoalTracker.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 6.1;
+			};
+			name = Release;
+		};
+		EF24B5FF23C7C9B7001EBDB9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = BQ7YQ94D2F;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = net.misacek.GoalTracker;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		EF24B60023C7C9B7001EBDB9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = BQ7YQ94D2F;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = net.misacek.GoalTracker;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EF24B5CD23C7C9B4001EBDB9 /* Build configuration list for PBXProject "GoalTracker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EF24B5F423C7C9B7001EBDB9 /* Debug */,
+				EF24B5F523C7C9B7001EBDB9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EF24B5F623C7C9B7001EBDB9 /* Build configuration list for PBXNativeTarget "GoalTracker WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EF24B5F723C7C9B7001EBDB9 /* Debug */,
+				EF24B5F823C7C9B7001EBDB9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EF24B5FA23C7C9B7001EBDB9 /* Build configuration list for PBXNativeTarget "GoalTracker WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EF24B5FB23C7C9B7001EBDB9 /* Debug */,
+				EF24B5FC23C7C9B7001EBDB9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EF24B5FE23C7C9B7001EBDB9 /* Build configuration list for PBXNativeTarget "GoalTracker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EF24B5FF23C7C9B7001EBDB9 /* Debug */,
+				EF24B60023C7C9B7001EBDB9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = EF24B5CA23C7C9B4001EBDB9 /* Project object */;
+}
