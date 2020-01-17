@@ -20,10 +20,10 @@
 
 @implementation InterfaceController
 
-- (void)awakeWithContext:(id)context {
+- (void)awakeWithContext:(id)context
+{
 	[super awakeWithContext:context];
 
-	// Configure interface objects here.
 	[self loadState];
 
 	__auto_type __weak ws = self;
@@ -59,14 +59,14 @@
 	}];
 }
 
-- (void)willActivate {
-	// This method is called when watch view controller is about to be visible to user
+- (void)willActivate
+{
 	[super willActivate];
 	[self loadState];
 }
 
-- (void)didDeactivate {
-	// This method is called when watch view controller is no longer visible
+- (void)didDeactivate
+{
 	[super didDeactivate];
 	[self saveState];
 }
